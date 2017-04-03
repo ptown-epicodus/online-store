@@ -12,4 +12,13 @@ export class AlbumService {
     return ALBUMS;
   }
 
+  getAlbumById(id: number) {
+    for (let i = 0; i < ALBUMS.length; i++) {
+      let album: Album = ALBUMS[i];
+      if (album.id  === id) {
+        return album;
+      }
+    }
+  }
+
 }
