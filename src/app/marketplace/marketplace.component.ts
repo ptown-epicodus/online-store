@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Album } from '../album.model';
 
@@ -24,9 +25,12 @@ export class MarketplaceComponent implements OnInit {
        "Second studio album by the English-American band, released in 1967.", 6)
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  goToDetailPage(clickedAlbum: Album) {
+    this.router.navigate(['albums', clickedAlbum.id]);
+  }
 }
