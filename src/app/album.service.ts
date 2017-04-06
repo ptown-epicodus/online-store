@@ -19,13 +19,8 @@ export class AlbumService {
     this.albums.push(newAlbum);
   }
 
-  // getAlbumById(id: number) {
-  //   for (let i = 0; i < ALBUMS.length; i++) {
-  //     let album: Album = ALBUMS[i];
-  //     if (album.id  === id) {
-  //       return album;
-  //     }
-  //   }
-  // }
+  getAlbumById(id: string) {
+    return this.angularFire.database.object('albums/' + id);
+  }
 
 }
