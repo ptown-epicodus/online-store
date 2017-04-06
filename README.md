@@ -1,31 +1,70 @@
-# OnlineStore
+# Online Store
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+#### Angular project for Epicodus, 04.03.2017
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### By _**Patrick McGreevy**_
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Description
 
-## Build
+This website was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+It manages a marketplace of albums.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Setup
+1. Set project root as working directory in CLI after cloning repo.
+2. Run `$ npm install`.
+3. Run `$ bower install`.
+4. Setup Firebase (see below).
+5. Run `$ ng build`.
+6. Run `$ ng serve`.
+7. Visit **`localhost:4200`**  in web browser.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Firebase setup
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+1. Create project in Firebase console.
+2. Copy credentials from Firebase into **`src/app/api-keys.ts`**.
+3. Firebase database rules to `"true"` for both `".read"` and `".write"` in Firebase console.
 
-## Deploying to GitHub Pages
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+## Project creation
 
-## Further help
+1. `$ ng new online-store`
+2. `$ cd online-store`
+3. `$ bower init`
+4. `bower install bootsrap --save`
+5. `$ ng g class album.model`
+6. `$ ng g c marketplace`
+7. `$ ng g service album`
+8. `$ ng g c about`
+9. `$ ng g c album-detail`
+10. `$ npm install angularfire2 firebase --save`
+11. `$ ng g c admin`
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Technologies Used
+
+* TypeScript
+* Angular
+* Npm
+* Bower
+* JSON
+* Bootstrap
+* Firebase
+
+## Known Bugs
+
+_No known bugs._
+
+
+## Support and contact details
+
+_Please contact patrick7490@icloud.com with questions or concerns._
+
+
+### License
+
+*MIT License*
+
+Copyright (c) 2017 _**Patrick McGreevy**_
