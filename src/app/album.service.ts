@@ -15,6 +15,8 @@ export class AlbumService {
     return this.albums;
   }
 
+  addAlbum(newAlbum: Album) {
+    this.albums.push(newAlbum);
   }
 
   // getAlbumById(id: number) {
