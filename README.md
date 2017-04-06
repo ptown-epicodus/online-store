@@ -26,6 +26,7 @@ It manages a marketplace of albums.
 1. Create project in Firebase console.
 2. Copy credentials from Firebase into **`src/app/api-keys.ts`**.
 3. Firebase database rules to `"true"` for both `".read"` and `".write"` in Firebase console.
+4. Import **`sample-albums.json`** into Firebase.
 
 
 ## Project creation
